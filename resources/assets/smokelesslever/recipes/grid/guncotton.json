@@ -1,0 +1,29 @@
+[
+  {
+    "ingredientPattern": "FSU",
+    "width": 3,
+    "height": 1,
+    "ingredients": {
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "game:saltpeter",
+        "quantity": 1
+      },
+      "U": {
+        "type": "item",
+        "code": "game:powder-sulfur",
+        "quantity": 1
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelesslever:guncotton",
+      "quantity": 4
+    }
+  }
+]

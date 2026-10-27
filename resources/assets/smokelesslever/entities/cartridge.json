@@ -1,0 +1,85 @@
+{
+  "code": "cartridge",
+  "class": "CombatOverhaul:Projectile",
+  "variantgroups": [
+    {
+      "code": "bullet",
+      "states": [
+        "lead",
+        "copper"
+      ]
+    }
+  ],
+  "SelectionBoxSize": {
+    "x": 0.1,
+    "y": 0.1
+  },
+  "CollisionBoxSize": {
+    "x": 0.01,
+    "y": 0.01
+  },
+  "client": {
+    "size": 0.5,
+    "renderer": "Shape",
+    "shape": {
+      "base": "maltiezfirearms:ammo/bullet"
+    },
+    "textures": {
+      "metal": {
+        "base": "game:block/metal/plate/{bullet}"
+      }
+    },
+    "behaviors": [
+      {
+        "code": "CombatOverhaul:ProjectilePhysics",
+        "groundDragFactor": 1,
+        "airDragFactor": 1,
+        "gravityFactor": 2,
+        "CanRicochet": false,
+        "SmokeTrail": false,
+        "SmokeTrailMinSpeed": 0.1,
+        "SmokeTrailIntervalMs": 0,
+        "SmokeTrailLifeMin": 1.0,
+        "SmokeTrailLifeMax": 1.8,
+        "SmokeTrailSize": 0.012,
+        "SmokeTrailSpread": 0.0,
+        "SmokeTrailQuantity": 1,
+        "SmokeTrailSpacing": 0.07,
+        "SmokeTrailMaxParticlesPerTick": 48,
+        "SmokeTrailAlpha": 42,
+        "SmokeTrailMotionFactor": 0.0
+      },
+      {
+        "code": "interpolateposition"
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      {
+        "code": "CombatOverhaul:ProjectilePhysics",
+        "groundDragFactor": 1,
+        "airDragFactor": 1,
+        "gravityFactor": 2,
+        "CanRicochet": false,
+        "SmokeTrail": false,
+        "SmokeTrailMinSpeed": 0.1,
+        "SmokeTrailIntervalMs": 0,
+        "SmokeTrailLifeMin": 1.0,
+        "SmokeTrailLifeMax": 1.8,
+        "SmokeTrailSize": 0.012,
+        "SmokeTrailSpread": 0.0,
+        "SmokeTrailQuantity": 1,
+        "SmokeTrailSpacing": 0.07,
+        "SmokeTrailMaxParticlesPerTick": 48,
+        "SmokeTrailAlpha": 42,
+        "SmokeTrailMotionFactor": 0.0
+      },
+      {
+        "code": "despawn",
+        "minSeconds": 600
+      }
+    ]
+  },
+  "sounds": {}
+}

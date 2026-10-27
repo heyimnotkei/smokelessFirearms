@@ -1,0 +1,8 @@
+<!-- Copy to Properties/localSettings.props (or just set the VINTAGE_STORY environment variable). -->
+<Project>
+  <PropertyGroup>
+    <!-- Folder that contains VintagestoryAPI.dll -->
+    <GameDirectory>C:\Users\YOU\AppData\Roaming\Vintagestory</GameDirectory>
+    <!-- Linux example: /home/you/vintagestory -->
+  </PropertyGroup>
+</Project>

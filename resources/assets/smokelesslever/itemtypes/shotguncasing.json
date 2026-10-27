@@ -1,0 +1,48 @@
+{
+  "code": "shotguncasing",
+  "class": "Item",
+  "maxstacksize": 64,
+  "shape": {
+    "base": "smokelesslever:item/shotguncasing"
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "smokelesslever": [
+      "*"
+    ]
+  },
+  "guiTransform": {
+    "rotation": {
+      "x": -25,
+      "y": 40,
+      "z": 0
+    },
+    "scale": 5.5,
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.05,
+      "z": 0.5
+    }
+  },
+  "fpHandTransform": {
+    "scale": 1.0
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 0.8
+  },
+  "groundTransform": {
+    "scale": 3.0
+  }
+}

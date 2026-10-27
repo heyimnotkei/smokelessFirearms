@@ -1,0 +1,23 @@
+[
+  {
+    "code": "smokelesspowder",
+    "sealHours": 12,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "smokelesslever:guncotton",
+        "quantity": 8
+      },
+      {
+        "type": "item",
+        "code": "game:spiritportion",
+        "litres": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "smokelesslever:smokelesspowder",
+      "stackSize": 16
+    }
+  }
+]

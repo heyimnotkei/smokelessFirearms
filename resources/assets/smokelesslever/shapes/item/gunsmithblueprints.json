@@ -1,0 +1,315 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {},
+  "textures": {
+    "pal": "smokelesslever:palette"
+  },
+  "elements": [
+    {
+      "name": "Scroll_body",
+      "from": [
+        5.0,
+        0.14,
+        6.5
+      ],
+      "to": [
+        11.0,
+        0.7,
+        9.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Scroll_end_l",
+      "from": [
+        4.6,
+        0.04,
+        6.5
+      ],
+      "to": [
+        5.0,
+        0.8,
+        9.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Scroll_end_r",
+      "from": [
+        11.0,
+        0.04,
+        6.5
+      ],
+      "to": [
+        11.4,
+        0.8,
+        9.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            5,
+            11,
+            7
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Ribbon",
+      "from": [
+        4.9,
+        0.02,
+        7.7
+      ],
+      "to": [
+        11.1,
+        0.82,
+        8.3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        }
+      }
+    }
+  ],
+  "animations": []
+}

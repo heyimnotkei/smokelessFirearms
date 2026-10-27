@@ -1,0 +1,172 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"metal": [16, 16],
+		"wood": [16, 16],
+		"stock-wood": [16, 16],
+		"brass": [16, 16]
+	},
+	"textures": {
+		"metal": "game:block/metal/plate/steel",
+		"wood": "game:block/wood/debarked/oak",
+		"stock-wood": "game:block/wood/debarked/oak",
+		"brass": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "stock_butt",
+			"from": [-0.504, -2.7, 0.94],
+			"to": [0.482, 0.206, 8.067],
+			"rotationOrigin": [-0.003, -1.239, 4.51],
+			"faces": {
+				"north": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]}
+			},
+			"rotationX": 11.62
+		},
+		{
+			"name": "stock_wrist",
+			"from": [-0.741, -0.65, -1.284],
+			"to": [0.746, 1.106, 1.574],
+			"rotationOrigin": [-0.004, 0.236, 0.137],
+			"faces": {
+				"north": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]}
+			},
+			"rotationX": 9.5
+		},
+		{
+			"name": "action",
+			"from": [-0.74, -0.349, -1.324],
+			"to": [0.745, 1.3, 0.211],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			}
+		},
+		{
+			"name": "forend",
+			"from": [-0.76, -0.001, -9.946],
+			"to": [0.737, 0.916, -0.682],
+			"rotationOrigin": [-0.003, 0.1, -1.3],
+			"faces": {
+				"north": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#wood", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "barrel_l_a",
+			"from": [-0.613, 0.352, -23.012],
+			"to": [-0.137, 1.112, -1.329],
+			"rotationOrigin": [-0.367, 0.1, -1.3],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "barrel_l_b",
+			"from": [-0.744, 0.398, -23.004],
+			"to": [0.021, 0.894, -1.337],
+			"rotationOrigin": [-0.367, 0.1, -1.3],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "barrel_r_a",
+			"from": [0.135, 0.361, -23.024],
+			"to": [0.609, 1.12, -1.359],
+			"rotationOrigin": [0.366, 0.1, -1.3],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "barrel_r_b",
+			"from": [-0.024, 0.38, -23.016],
+			"to": [0.74, 0.873, -1.367],
+			"rotationOrigin": [0.366, 0.1, -1.3],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		}
+	],
+	"animations": [
+		{
+			"name": "Open",
+			"code": "open",
+			"quantityframes": 11,
+			"onActivityStopped": "Stop",
+			"onAnimationEnd": "Hold",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"forend": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"barrel_l_a": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"barrel_l_b": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"barrel_r_a": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"barrel_r_b": {"rotationX": 0, "rotationY": 0, "rotationZ": 0}
+					}
+				},
+				{
+					"frame": 10,
+					"elements": {
+						"forend": {"rotationX": 0, "rotationY": 0, "rotationZ": 15},
+						"barrel_l_a": {"rotationX": 0, "rotationY": 0, "rotationZ": 15},
+						"barrel_l_b": {"rotationX": 0, "rotationY": 0, "rotationZ": 15},
+						"barrel_r_a": {"rotationX": 0, "rotationY": 0, "rotationZ": 15},
+						"barrel_r_b": {"rotationX": 0, "rotationY": 0, "rotationZ": 15}
+					}
+				}
+			],
+			"quantityFrames": 11
+		}
+	]
+}

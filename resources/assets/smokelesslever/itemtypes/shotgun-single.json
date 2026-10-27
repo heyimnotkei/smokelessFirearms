@@ -1,0 +1,237 @@
+{
+  "code": "shotgun-single",
+  "class": "LeverAction:Repeater",
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "maltiezfirearms": [
+      "*"
+    ]
+  },
+  "maxstacksize": 1,
+  "durability": 750,
+  "rackable": true,
+  "tool": "bow",
+  "behaviors": [
+    {
+      "name": "CombatOverhaul:AnimatableAttachable",
+      "properties": {
+        "animated-shape": "smokelesslever:firearms/shotgun-single"
+      }
+    }
+  ],
+  "attributes": {
+    "BulletDamageMultiplier": 1.5,
+    "BulletDamageStrength": 8,
+    "BulletTransform": {
+      "translation": {
+        "x": -3.5,
+        "y": 0.2,
+        "z": -3.5
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 0.5
+    },
+    "FlaskTransform": {
+      "Translation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Rotation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Scale": 1
+    },
+    "PrimingEquipmentTransform": {
+      "Translation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Rotation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Scale": 1
+    },
+    "ProficiencyStat": "firearmsProficiency",
+    "IdleAnimation": "maltiezfirearms:firearms-shoulder",
+    "ReadyAnimation": "maltiezfirearms:firearms-ready",
+    "LoadAnimation": [
+      "smokelesslever:shotgun-load"
+    ],
+    "PrimeAnimation": "smokelesslever:shotgun-prime",
+    "AimAnimation": "smokelesslever:shotgun-aim",
+    "ShootAnimation": [
+      "smokelesslever:shotgun-shoot"
+    ],
+    "LoadedAnimation": [
+      "smokelesslever:shotgun-loaded"
+    ],
+    "PrimedAnimation": "smokelesslever:shotgun-primed",
+    "ReloadAnimationSpeed": 1,
+    "MagazineSize": 1,
+    "BulletLoadedPerReload": 1,
+    "BulletsLoadedPerBulletItem": 1,
+    "BulletsFiredPerShot": 1,
+    "WaddingUsedPerReload": 0,
+    "LoadPowderConsumption": 0,
+    "PrimePowderConsumption": 0,
+    "LoadingRequirementWildcard": "",
+    "PrimingRequirementWildcard": "",
+    "BulletWildcard": "*smokelesslever:shotshell-*",
+    "Aiming": {
+      "AimDifficulty": 1,
+      "CursorType": "None",
+      "AccuracyOvertimeSec": 0,
+      "ZeroingAngle": 0,
+      "AllowSprint": false,
+      "MoveSpeedPenalty": 0.1,
+      "AimDrift": 25,
+      "AimTwitch": 10,
+      "AnimationFollowX": 5.5,
+      "AnimationFollowY": 5.5,
+      "VerticalLimit": 0.25,
+      "VerticalOffset": -0.05
+    },
+    "BulletVelocity": 10,
+    "DispersionMOA": [
+      120,
+      120
+    ],
+    "Zeroing": 0,
+    "Recoil": {
+      "Enabled": true,
+      "Strength": 1,
+      "VerticalBaseDeg": 3,
+      "VerticalDamageScaleDeg": 0.45,
+      "VerticalMinDeg": 4,
+      "VerticalMaxDeg": 12,
+      "HorizontalBaseDeg": 0,
+      "HorizontalVerticalScale": 0.15,
+      "HorizontalDamageScaleDeg": 0,
+      "HorizontalMinDeg": 0.35,
+      "HorizontalMaxDeg": 1.8,
+      "RiseDurationSec": 0.18,
+      "SpringBack": true,
+      "SpringBackFraction": 0.28,
+      "SpringBackDelaySec": 0.04,
+      "SpringBackDurationSec": 0.55,
+      "MaxQueuedVerticalDeg": 20,
+      "MaxQueuedHorizontalDeg": 3,
+      "MinIntervalMs": 80,
+      "CameraShakeBase": 0.0018,
+      "CameraShakeDamageScale": 4E-05,
+      "CameraShakeMin": 0.0018,
+      "CameraShakeMax": 0.004
+    },
+    "CancelReloadOnInAir": true,
+    "LoadSpeedPenalty": -0.5,
+    "FlaskWildcard": "smokelesslever:no-flask-needed",
+    "CockingRequirementWildcard": ""
+  },
+  "shape": {
+    "base": "smokelesslever:firearms/shotgun-single"
+  },
+  "heldTpHitAnimation": "firearmsempty",
+  "heldLeftTpIdleAnimation": "firearmsempty",
+  "heldLeftReadyAnimation": "firearmsempty",
+  "heldRightReadyAnimation": "firearmsempty",
+  "heldOldTpIdleAnimation": "firearmsempty",
+  "heldTpUseAnimation": "firearmsempty",
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -14,
+      "y": 20,
+      "z": -180
+    },
+    "origin": {
+      "x": -0.93,
+      "y": -0.7,
+      "z": -3
+    },
+    "scaleXyz": {
+      "x": -1.89,
+      "y": 1.89,
+      "z": 1.89
+    }
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.2,
+      "y": 0.6,
+      "z": 1
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 4
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": -0.05,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -90,
+      "z": 0
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 0.8
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0.05,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 90
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 4.8
+  }
+}

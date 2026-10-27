@@ -1,0 +1,465 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {},
+  "textures": {
+    "pal": "smokelesslever:palette"
+  },
+  "elements": [
+    {
+      "name": "Lips",
+      "from": [
+        6.7,
+        2.33,
+        9.4
+      ],
+      "to": [
+        9.3,
+        2.55,
+        10.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Body_top",
+      "from": [
+        6.85,
+        1.65,
+        9.0
+      ],
+      "to": [
+        9.15,
+        2.33,
+        10.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Body_mid",
+      "from": [
+        7.0,
+        0.9,
+        8.3
+      ],
+      "to": [
+        9.0,
+        1.65,
+        9.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Body_low",
+      "from": [
+        7.15,
+        0.25,
+        7.7
+      ],
+      "to": [
+        8.85,
+        0.9,
+        9.4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Floorplate",
+      "from": [
+        7.15,
+        0.05,
+        7.7
+      ],
+      "to": [
+        8.85,
+        0.25,
+        8.7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            5,
+            5,
+            7,
+            7
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Rib",
+      "from": [
+        6.75,
+        1.0,
+        9.3
+      ],
+      "to": [
+        9.25,
+        1.15,
+        9.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    }
+  ],
+  "animations": []
+}

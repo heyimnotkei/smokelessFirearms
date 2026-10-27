@@ -1,0 +1,390 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {},
+  "textures": {
+    "pal": "smokelesslever:palette"
+  },
+  "elements": [
+    {
+      "name": "Rim",
+      "from": [
+        7.15,
+        0.050000000000000044,
+        10.15
+      ],
+      "to": [
+        8.85,
+        1.75,
+        10.45
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Case",
+      "from": [
+        7.2,
+        0.09999999999999998,
+        6.85
+      ],
+      "to": [
+        8.8,
+        1.7000000000000002,
+        10.15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Shoulder",
+      "from": [
+        7.4,
+        0.30000000000000004,
+        6.55
+      ],
+      "to": [
+        8.6,
+        1.5,
+        6.85
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Bullet_base",
+      "from": [
+        7.55,
+        0.45,
+        6.05
+      ],
+      "to": [
+        8.45,
+        1.35,
+        6.55
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Bullet_nose",
+      "from": [
+        7.7,
+        0.6000000000000001,
+        5.55
+      ],
+      "to": [
+        8.3,
+        1.2,
+        6.05
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            13,
+            1,
+            15,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    }
+  ],
+  "animations": []
+}

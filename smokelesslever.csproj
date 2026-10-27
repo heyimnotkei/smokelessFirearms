@@ -1,0 +1,112 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Mod info -->
+  <PropertyGroup>
+    <ModName>Smokeless Lever-Action</ModName>
+    <ModType>code</ModType>
+    <ModVersion>0.1.8</ModVersion>
+    <ModId>smokelesslever</ModId>
+    <Description>Smokeless powder firearms with matching ammo types and crafting mechanisms Addon for Firearms (fork) on Overhaul lib (legacy compat).</Description>
+    <Side>Universal</Side>
+    <RequiredOnClient>true</RequiredOnClient>
+    <RequiredOnServer>true</RequiredOnServer>
+  </PropertyGroup>
+
+  <!-- Dependencies (mod ids + minimum versions) -->
+  <ItemGroup>
+    <Dependencies Include="overhaulliblegacycompat" Version="1.0.1" />
+    <Dependencies Include="firearmsfork" Version="1.9.17" />
+  </ItemGroup>
+
+  <!-- Project settings -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Version in the assembly name: the game cannot unload a code mod, and .NET refuses to load a second
+         assembly with the same identity from a different file ("Assembly with same name is already loaded"). -->
+    <AssemblyName>SmokelessLever_$(ModVersion.Replace('.', '_'))</AssemblyName>
+    <RootNamespace>LeverAction</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <!-- Local settings: set GameDirectory in Properties/localSettings.props, or set the VINTAGE_STORY env var -->
+  <Import Project="Properties/localSettings.props" Condition="Exists('Properties/localSettings.props')" />
+
+  <PropertyGroup>
+    <ProjectDir>$(MSBuildProjectDirectory)</ProjectDir>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">$(VINTAGE_STORY)</GameDirectory>
+    <OutputDir>bin/$(Configuration)/Mods</OutputDir>
+    <OutputPath>$(OutputDir)/$(ModId)</OutputPath>
+    <AssetsDir>$(ProjectDir)/resources/assets</AssetsDir>
+    <ModIconFile>$(ProjectDir)/resources/modicon.png</ModIconFile>
+    <ExternalLibs>$(ProjectDir)/external</ExternalLibs>
+    <ReleasesDir>$(ProjectDir)/Releases</ReleasesDir>
+    <ReleasePath>$(ReleasesDir)/$(ModId)_$(ModVersion).zip</ReleasePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="source/**/*.cs" />
+  </ItemGroup>
+
+  <!-- Game + mod-dependency references (not copied to output) -->
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI" HintPath="$(GameDirectory)/VintagestoryAPI.dll" Private="false" />
+    <Reference Include="VintagestoryLib" HintPath="$(GameDirectory)/VintagestoryLib.dll" Private="false" />
+    <Reference Include="VSSurvivalMod" HintPath="$(GameDirectory)/Mods/VSSurvivalMod.dll" Private="false" />
+    <Reference Include="VSEssentials" HintPath="$(GameDirectory)/Mods/VSEssentials.dll" Private="false" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(GameDirectory)/Lib/Newtonsoft.Json.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(GameDirectory)/Lib/0Harmony.dll" Private="false" />
+    <Reference Include="protobuf-net" HintPath="$(GameDirectory)/Lib/protobuf-net.dll" Private="false" />
+    <Reference Include="cairo-sharp" HintPath="$(GameDirectory)/Lib/cairo-sharp.dll" Private="false" />
+    <Reference Include="SkiaSharp" HintPath="$(GameDirectory)/Lib/SkiaSharp.dll" Private="false" />
+    <Reference Include="$(GameDirectory)/Lib/OpenTK*.dll" Private="false" />
+    <!-- FirearmsFork.dll + OverhaullibLegacyCompat.dll (see README / scripts/setup-deps) -->
+    <Reference Include="$(ExternalLibs)/**/*.dll" Private="false" Condition="Exists('$(ExternalLibs)')" />
+  </ItemGroup>
+
+  <Target Name="ModInfo" BeforeTargets="CopyFilesToOutput">
+    <PropertyGroup>
+      <ModInfo>
+{
+  "type": "$(ModType)",
+  "name": "$(ModName)",
+  "modid": "$(ModId)",
+  "version": "$(ModVersion)",
+  "description": "$(Description)",
+  "authors": [ "You" ],
+  "dependencies": {
+    @(Dependencies->'"%(Identity)": "%(Version)"', ', ')
+  },
+  "side": "$(Side)",
+  "requiredOnClient": $(RequiredOnClient),
+  "requiredOnServer": $(RequiredOnServer)
+}
+      </ModInfo>
+    </PropertyGroup>
+    <MakeDir Directories="$(OutputPath)" />
+    <WriteLinesToFile File="$(OutputPath)/modinfo.json" Lines="$(ModInfo)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+  </Target>
+
+  <Target Name="CopyFilesToOutput" AfterTargets="ModInfo" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <AssetFiles Include="$(AssetsDir)/**/*.*" />
+    </ItemGroup>
+    <RemoveDir Directories="$(OutputPath)/assets" />
+    <Copy SourceFiles="@(AssetFiles)" DestinationFiles="@(AssetFiles->'$(OutputPath)/assets/%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="$(ModIconFile)" DestinationFolder="$(OutputPath)" Condition="Exists('$(ModIconFile)')" />
+  </Target>
+
+  <Target Name="RemoveLegacyAssembly" BeforeTargets="BeforeBuild">
+    <Delete Files="$(OutputPath)/SmokelessLever.dll;$(OutputPath)/SmokelessLever.deps.json;$(OutputPath)/SmokelessLever.pdb" />
+  </Target>
+
+  <!-- Release build -> Releases/smokelesslever_<version>.zip (drop into your Vintage Story Mods folder) -->
+  <Target Name="ZipRelease" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <MakeDir Directories="$(ReleasesDir)" />
+    <Delete Files="$(ReleasePath)" />
+    <ZipDirectory SourceDirectory="$(OutputPath)" DestinationFile="$(ReleasePath)" />
+    <Message Text="Packaged $(ReleasePath)" Importance="high" />
+  </Target>
+</Project>

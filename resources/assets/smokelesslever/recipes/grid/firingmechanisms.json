@@ -1,0 +1,76 @@
+[
+  {
+    "ingredientPattern": "PGN",
+    "width": 3,
+    "height": 1,
+    "ingredients": {
+      "P": { "type": "item", "code": "game:metalplate-steel" },
+      "G": { "type": "item", "code": "game:gear-rusty" },
+      "N": { "type": "item", "code": "game:metalnailsandstrips-steel" }
+    },
+    "output": { "type": "item", "code": "smokelesslever:triggersear" }
+  },
+  {
+    "ingredientPattern": "SPB",
+    "width": 3,
+    "height": 1,
+    "ingredients": {
+      "S": { "type": "item", "code": "game:metalnailsandstrips-steel" },
+      "P": { "type": "item", "code": "game:metalplate-steel" },
+      "B": { "type": "item", "code": "game:metalplate-brass" }
+    },
+    "output": { "type": "item", "code": "smokelesslever:firingpin" }
+  },
+  {
+    "ingredientPattern": "NP",
+    "width": 2,
+    "height": 1,
+    "ingredients": {
+      "N": { "type": "item", "code": "game:metalnailsandstrips-steel" },
+      "P": { "type": "item", "code": "game:metalplate-steel" }
+    },
+    "output": { "type": "item", "code": "smokelesslever:mainspring" }
+  },
+  {
+    "ingredientPattern": "BTF,SGP",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "B": { "type": "item", "code": "smokelesslever:gunsmithblueprints", "isTool": true },
+      "T": { "type": "item", "code": "smokelesslever:triggersear" },
+      "F": { "type": "item", "code": "smokelesslever:firingpin" },
+      "S": { "type": "item", "code": "smokelesslever:mainspring" },
+      "G": { "type": "item", "code": "game:gear-rusty" },
+      "P": { "type": "item", "code": "game:metalplate-steel" }
+    },
+    "output": { "type": "item", "code": "smokelesslever:leveractionmechanism" }
+  },
+  {
+    "ingredientPattern": "BTF,SGR",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "B": { "type": "item", "code": "smokelesslever:gunsmithblueprints", "isTool": true },
+      "T": { "type": "item", "code": "smokelesslever:triggersear" },
+      "F": { "type": "item", "code": "smokelesslever:firingpin" },
+      "S": { "type": "item", "code": "smokelesslever:mainspring" },
+      "G": { "type": "item", "code": "game:gear-rusty" },
+      "R": { "type": "item", "code": "game:metalplate-brass" }
+    },
+    "output": { "type": "item", "code": "smokelesslever:shotgunmechanism" }
+  },
+  {
+    "ingredientPattern": "BTS,FGP",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "B": { "type": "item", "code": "smokelesslever:gunsmithblueprints", "isTool": true },
+      "T": { "type": "item", "code": "smokelesslever:triggersear" },
+      "S": { "type": "item", "code": "smokelesslever:mainspring" },
+      "F": { "type": "item", "code": "smokelesslever:firingpin" },
+      "G": { "type": "item", "code": "game:gear-rusty" },
+      "P": { "type": "item", "code": "game:metalplate-steel", "quantity": 2 }
+    },
+    "output": { "type": "item", "code": "smokelesslever:rollingblockmechanism" }
+  }
+]

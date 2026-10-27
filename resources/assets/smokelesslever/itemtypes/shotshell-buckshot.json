@@ -1,0 +1,82 @@
+{
+  "code": "shotshell-buckshot",
+  "class": "Item",
+  "maxstacksize": 16,
+  "storageFlags": 513,
+  "shape": {
+    "base": "smokelesslever:item/shell-buckshot"
+  },
+  "behaviors": [
+    {
+      "name": "CombatOverhaul:Projectile",
+      "properties": {
+        "stats": {
+          "AdditionalDurabilityCost": 0,
+          "CollisionRadius": 0.01,
+          "PenetrationDistance": 0.2,
+          "DamageStatsByType": {
+            "*shotshell-buckshot": {
+              "DamageType": "BluntAttack",
+              "Damage": 32
+            }
+          },
+          "SpeedThreshold": 0.3,
+          "Knockback": 0.1,
+          "EntityCode": "maltiezfirearms:pellet-lead",
+          "DurabilityDamage": 0,
+          "DropChance": 0
+        }
+      }
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "smokelesslever": [
+      "*"
+    ]
+  },
+  "shapeByType": {
+    "*shotshell-buckshot": {
+      "base": "smokelesslever:item/shell-buckshot"
+    }
+  },
+  "textures": {
+    "pal": {
+      "base": "smokelesslever:palette"
+    }
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -25,
+      "y": 40,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.05,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+  "fpHandTransform": {
+    "scale": 1.0
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 0.8
+  },
+  "groundTransform": {
+    "scale": 2.5
+  }
+}

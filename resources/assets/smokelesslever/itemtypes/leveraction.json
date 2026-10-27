@@ -1,0 +1,364 @@
+{
+  "code": "leveraction",
+  "class": "LeverAction:Repeater",
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "carbine"
+      ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "maltiezfirearms": [
+      "*"
+    ]
+  },
+  "maxstacksize": 1,
+  "durability": 1200,
+  "rackable": true,
+  "tool": "bow",
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    },
+    {
+      "name": "CombatOverhaul:AnimatableAttachable",
+      "properties": {
+        "animated-shape": "smokelesslever:firearms/leveraction"
+      }
+    }
+  ],
+  "attributes": {
+    "toolrackTransform": {
+      "translation": {
+        "x": 1.4,
+        "y": 0.55,
+        "z": 0.5
+      },
+      "rotation": {
+        "x": 1,
+        "y": 95,
+        "z": -90
+      },
+      "origin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 1.34
+    },
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0.55,
+        "y": 0.44,
+        "z": 0.75
+      },
+      "rotation": {
+        "x": 100,
+        "y": 4,
+        "z": -101
+      },
+      "origin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 0.81
+    },
+    "inWallmountTransform": {
+      "translation": {
+        "x": -0.38,
+        "y": -0.03,
+        "z": -0.04
+      },
+      "rotation": {
+        "x": 90,
+        "y": -84,
+        "z": 90
+      },
+      "origin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 0.81
+    },
+    "inWeaponrackTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.02,
+        "z": 0.08
+      },
+      "rotation": {
+        "x": 82,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 0.81
+    },
+    "handbook": {
+      "groupBy": [
+        "leveraction-*"
+      ]
+    },
+    "BulletDamageMultiplier": 1.25,
+    "BulletDamageStrength": 9,
+    "BulletTransform": {
+      "translation": {
+        "x": -3.5,
+        "y": 0.2,
+        "z": -3.5
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 0.5
+    },
+    "FlaskTransform": {
+      "Translation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Rotation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Scale": 1
+    },
+    "WaddingTransform": {
+      "Translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "scale": 1
+    },
+    "PrimingEquipmentTransform": {
+      "Translation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Rotation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Scale": 1
+    },
+    "ProficiencyStat": "firearmsProficiency",
+    "IdleAnimation": "maltiezfirearms:firearms-shoulder",
+    "ReadyAnimation": "maltiezfirearms:firearms-ready",
+    "LoadAnimation": [
+      "smokelesslever:leveraction-load"
+    ],
+    "PrimeAnimation": "smokelesslever:leveraction-prime",
+    "AimAnimation": "smokelesslever:leveraction-aim",
+    "ShootAnimation": [
+      "smokelesslever:leveraction-shoot"
+    ],
+    "LoadedAnimation": [
+      "smokelesslever:leveraction-loaded"
+    ],
+    "PrimedAnimation": "smokelesslever:leveraction-primed",
+    "ReloadAnimationSpeed": 1,
+    "MagazineSize": 7,
+    "BulletLoadedPerReload": 1,
+    "WaddingUsedPerReload": 0,
+    "LoadPowderConsumption": 0,
+    "PrimePowderConsumption": 0,
+    "LoadingRequirementWildcard": "",
+    "PrimingRequirementWildcard": "",
+    "AimingRequirementWildcard": "",
+    "BulletWildcard": "*smokelesslever:cartridge-*",
+    "Aiming": {
+      "AimDifficulty": 1,
+      "CursorType": "None",
+      "AccuracyOvertimeSec": 0,
+      "ZeroingAngle": 0,
+      "AllowSprint": false,
+      "MoveSpeedPenalty": 0.1,
+      "AimDrift": 10,
+      "AimTwitch": 5,
+      "AnimationFollowX": 5.5,
+      "AnimationFollowY": 5.5,
+      "VerticalLimit": 0.25,
+      "VerticalOffset": -0.05
+    },
+    "BulletVelocity": 14,
+    "DispersionMOA": [
+      45,
+      45
+    ],
+    "Zeroing": 0,
+    "Recoil": {
+      "Enabled": true,
+      "Strength": 1,
+      "VerticalBaseDeg": 3.0,
+      "VerticalDamageScaleDeg": 0.45,
+      "VerticalMinDeg": 4,
+      "VerticalMaxDeg": 12,
+      "HorizontalBaseDeg": 0,
+      "HorizontalVerticalScale": 0.15,
+      "HorizontalDamageScaleDeg": 0,
+      "HorizontalMinDeg": 0.35,
+      "HorizontalMaxDeg": 1.8,
+      "RiseDurationSec": 0.18,
+      "SpringBack": true,
+      "SpringBackFraction": 0.28,
+      "SpringBackDelaySec": 0.04,
+      "SpringBackDurationSec": 0.55,
+      "MaxQueuedVerticalDeg": 20,
+      "MaxQueuedHorizontalDeg": 3,
+      "MinIntervalMs": 80,
+      "CameraShakeBase": 0.0018,
+      "CameraShakeDamageScale": 4E-05,
+      "CameraShakeMin": 0.0018,
+      "CameraShakeMax": 0.004
+    },
+    "CancelReloadOnInAir": true,
+    "LoadSpeedPenalty": -0.5,
+    "BulletsLoadedPerBulletItem": 1,
+    "FlaskWildcard": "smokelesslever:no-flask-needed",
+    "CockingRequirementWildcard": ""
+  },
+  "shape": {
+    "base": "smokelesslever:firearms/leveraction"
+  },
+  "heldTpHitAnimation": "firearmsempty",
+  "heldLeftTpIdleAnimation": "firearmsempty",
+  "heldLeftReadyAnimation": "firearmsempty",
+  "heldRightReadyAnimation": "firearmsempty",
+  "heldOldTpIdleAnimation": "firearmsempty",
+  "heldTpUseAnimation": "firearmsempty",
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -14,
+      "y": 20,
+      "z": -180
+    },
+    "origin": {
+      "x": -0.93,
+      "y": -0.7,
+      "z": -3
+    },
+    "scaleXyz": {
+      "x": -1.89,
+      "y": 1.89,
+      "z": 1.89
+    }
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.2,
+      "y": 0.6,
+      "z": 1
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 4
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": -0.05,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -90,
+      "z": 0
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 0.8
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0.05,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 90
+    },
+    "origin": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 4.8
+  }
+}

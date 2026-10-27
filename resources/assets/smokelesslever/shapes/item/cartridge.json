@@ -1,0 +1,466 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {},
+  "textures": {
+    "brass": "game:block/metal/plate/brass",
+    "lead": "game:block/metal/plate/lead"
+  },
+  "elements": [
+    {
+      "name": "Rim",
+      "from": [
+        -0.62,
+        0,
+        -0.62
+      ],
+      "to": [
+        0.62,
+        0.25,
+        0.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Case",
+      "from": [
+        -0.52,
+        0.25,
+        -0.52
+      ],
+      "to": [
+        0.52,
+        2.3,
+        0.52
+      ],
+      "faces": {
+        "north": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Shoulder",
+      "from": [
+        -0.42,
+        2.3,
+        -0.42
+      ],
+      "to": [
+        0.42,
+        2.6,
+        0.42
+      ],
+      "faces": {
+        "north": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#brass",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Bullet_base",
+      "from": [
+        -0.36,
+        2.6,
+        -0.36
+      ],
+      "to": [
+        0.36,
+        3.5,
+        0.36
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Bullet_nose",
+      "from": [
+        -0.26,
+        3.5,
+        -0.26
+      ],
+      "to": [
+        0.26,
+        3.9,
+        0.26
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Bullet_tip",
+      "from": [
+        -0.14,
+        3.9,
+        -0.14
+      ],
+      "to": [
+        0.14,
+        4.1,
+        0.14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#lead",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "autoUv": false
+        }
+      }
+    }
+  ],
+  "animations": []
+}
