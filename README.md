@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smokeless Lever-Action (`smokelesslever`)
 
 Addon for **Vintage Story 1.22.x** that adds:
@@ -132,3 +133,6 @@ collide with an older copy in memory, but a running game still keeps running the
 
 After starting, `client-main.log` should contain `Mod 'smokelesslever_0.1.8.zip' (smokelesslever)` and
 `LeverAction.LeverActionModSystem`, and no `[Error]` lines mentioning smokelesslever.
+=======
+# dev
+>>>>>>> 0b96e1d77b90c02979567030c994876cba0b3266
