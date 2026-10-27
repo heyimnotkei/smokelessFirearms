@@ -1,0 +1,130 @@
+{
+  "code": "cartridge",
+  "class": "Item",
+  "maxstacksize": 64,
+  "storageFlags": 513,
+  "variantgroups": [
+    {
+      "code": "bullet",
+      "states": [
+        "lead",
+        "copper"
+      ]
+    }
+  ],
+  "behaviors": [
+    {
+      "name": "CombatOverhaul:Projectile",
+      "properties": {
+        "stats": {
+          "AdditionalDurabilityCost": 0,
+          "CollisionRadius": 0.02,
+          "PenetrationDistance": 2,
+          "DamageStatsByType": {
+            "*-lead": {
+              "DamageType": "PiercingAttack",
+              "Damage": 20
+            },
+            "*-copper": {
+              "DamageType": "PiercingAttack",
+              "Damage": 17
+            }
+          },
+          "SpeedThreshold": 0.3,
+          "Knockback": 0.1,
+          "EntityCode": "smokelessfirearms:cartridge-{bullet}",
+          "DurabilityDamage": 0,
+          "DropChance": 0
+        }
+      }
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "smokelessfirearms": [
+      "*"
+    ]
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -25,
+      "y": 40,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.039,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.039,
+      "z": 0.5
+    },
+    "scale": 0.8
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.039,
+      "z": 0.5
+    },
+    "scale": 2.5
+  },
+  "shapeByType": {
+    "*-lead": {
+      "base": "smokelessfirearms:item/cartridge-lead"
+    },
+    "*-copper": {
+      "base": "smokelessfirearms:item/cartridge-copper"
+    }
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.039,
+      "z": 0.5
+    },
+    "scale": 1.0
+  }
+}

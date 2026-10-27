@@ -1,0 +1,240 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {},
+  "textures": {
+    "pal": "smokelessfirearms:palette"
+  },
+  "elements": [
+    {
+      "name": "Rim",
+      "from": [
+        7.38,
+        0.0,
+        9.05
+      ],
+      "to": [
+        8.62,
+        1.24,
+        9.3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Case",
+      "from": [
+        7.48,
+        0.09999999999999998,
+        7.0
+      ],
+      "to": [
+        8.52,
+        1.1400000000000001,
+        9.05
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    },
+    {
+      "name": "Shoulder",
+      "from": [
+        7.58,
+        0.2,
+        6.7
+      ],
+      "to": [
+        8.42,
+        1.04,
+        7.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#pal",
+          "uv": [
+            9,
+            1,
+            11,
+            3
+          ],
+          "autoUv": false
+        }
+      }
+    }
+  ],
+  "animations": []
+}

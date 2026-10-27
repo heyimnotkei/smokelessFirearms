@@ -1,0 +1,34 @@
+{
+  "code": "triggersear",
+  "class": "Item",
+  "maxstacksize": 16,
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "smokelessfirearms": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "smokelessfirearms:item/triggersear"
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -25,
+      "y": 40,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.03,
+      "z": 0.5
+    },
+    "scale": 5.5
+  }
+}

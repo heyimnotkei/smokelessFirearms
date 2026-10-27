@@ -1,0 +1,82 @@
+{
+  "code": "heavycartridge-50",
+  "class": "Item",
+  "maxstacksize": 16,
+  "storageFlags": 513,
+  "shape": {
+    "base": "smokelessfirearms:item/heavycartridge-50"
+  },
+  "behaviors": [
+    {
+      "name": "CombatOverhaul:Projectile",
+      "properties": {
+        "stats": {
+          "AdditionalDurabilityCost": 0,
+          "CollisionRadius": 0.02,
+          "PenetrationDistance": 2,
+          "DamageStatsByType": {
+            "*heavycartridge-50": {
+              "DamageType": "PiercingAttack",
+              "Damage": 75
+            }
+          },
+          "SpeedThreshold": 0.3,
+          "Knockback": 0.2,
+          "EntityCode": "smokelessfirearms:cartridge-lead",
+          "DurabilityDamage": 0,
+          "DropChance": 0
+        }
+      }
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "smokelessfirearms": [
+      "*"
+    ]
+  },
+  "shapeByType": {
+    "*heavycartridge-50": {
+      "base": "smokelessfirearms:item/heavycartridge-50"
+    }
+  },
+  "textures": {
+    "pal": {
+      "base": "smokelessfirearms:palette"
+    }
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -25,
+      "y": 40,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.056,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+  "fpHandTransform": {
+    "scale": 1.0
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 0.8
+  },
+  "groundTransform": {
+    "scale": 2.5
+  }
+}

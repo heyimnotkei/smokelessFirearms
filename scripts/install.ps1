@@ -1,4 +1,4 @@
-# Installs the newest Releases\smokelesslever_*.zip into the Mods folder your game actually uses.
+# Installs the newest Releases\smokelessfirearms_*.zip into the Mods folder your game actually uses.
 #
 #   dotnet build -c Release
 #   .\scripts\install.ps1            # add -Force to skip the "is the game running" check
@@ -6,14 +6,14 @@
 # What it does:
 #   1. refuses to run while Vintage Story is open (a code mod cannot be swapped in a running game)
 #   2. finds your Mods folder by locating the firearmsfork zip (works with the MVL launcher layout too)
-#   3. deletes every older smokelesslever*.zip in those places, so two copies never load
+#   3. deletes older smokelessfirearms*.zip and legacy smokelesslever*.zip copies, so two copies never load
 #   4. copies the new zip in
 param([string]$Zip, [switch]$Force)
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
 if (-not $Zip) {
-    $latest = Get-ChildItem "$root\Releases\smokelesslever_*.zip" -ErrorAction SilentlyContinue |
+    $latest = Get-ChildItem "$root\Releases\smokelessfirearms_*.zip" -ErrorAction SilentlyContinue |
         Sort-Object LastWriteTime -Descending | Select-Object -First 1
     if (-not $latest) { throw "No zip in $root\Releases. Run: dotnet build -c Release" }
     $Zip = $latest.FullName
@@ -38,7 +38,7 @@ $dest = if ($anchor) { $anchor.DirectoryName } else { "$env:APPDATA\Vintagestory
 if (-not (Test-Path $dest)) { New-Item -ItemType Directory -Force $dest | Out-Null }
 
 foreach ($r in $searchRoots) {
-    Get-ChildItem $r -Recurse -Filter "smokelesslever*.zip" -ErrorAction SilentlyContinue | ForEach-Object {
+    Get-ChildItem $r -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -like "smokelessfirearms*.zip" -or $_.Name -like "smokelesslever*.zip" } | ForEach-Object {
         Write-Host "removing old copy: $($_.FullName)"
         Remove-Item $_.FullName -Force
     }
@@ -47,4 +47,4 @@ foreach ($r in $searchRoots) {
 Copy-Item $Zip $dest -Force
 Write-Host ""
 Write-Host "Installed $(Split-Path $Zip -Leaf) -> $dest"
-Write-Host "Now start the game fresh. In client-main.log look for:  Mod 'smokelesslever_...zip' (smokelesslever)"
+Write-Host "Now start the game fresh. In client-main.log look for:  Mod 'smokelessfirearms_...zip' (smokelessfirearms)"

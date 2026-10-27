@@ -1,0 +1,37 @@
+[
+  {
+    "ingredientPattern": "PBN,WGM,PNP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-steel"
+      },
+      "B": {
+        "type": "item",
+        "code": "maltiezfirearms:barrel-carbine-steel"
+      },
+      "N": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-steel"
+      },
+      "W": {
+        "type": "item",
+        "code": "game:plank-*"
+      },
+      "G": {
+        "type": "item",
+        "code": "game:gear-rusty"
+      },
+      "M": {
+        "type": "item",
+        "code": "smokelessfirearms:leveractionmechanism"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:leveraction-carbine"
+    }
+  }
+]

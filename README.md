@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Smokeless Lever-Action (`smokelesslever`)
+# Smokeless Lever-Action (`smokelessfirearms`)
 
 Addon for **Vintage Story 1.22.x** that adds:
 
@@ -27,7 +27,7 @@ export VINTAGE_STORY=/path/to/vintagestory          # Windows PowerShell: $env:V
 # 2. build the two dependency mods from source and copy their DLLs into ./external
 ./scripts/setup-deps.sh                             # Windows: .\scripts\setup-deps.ps1
 
-# 3. build this mod  ->  Releases/smokelesslever_0.1.8.zip
+# 3. build this mod  ->  Releases/smokelessfirearms_0.1.8.zip
 dotnet build -c Release
 ```
 
@@ -40,7 +40,7 @@ dotnet build -c Release
 ```
 
 The script finds the Mods folder your game really uses (it looks for the `firearmsfork` zip, so it works with the
-MVL launcher layout as well as the stock `VintagestoryData\Mods`), deletes every older `smokelesslever*.zip`, and copies
+MVL launcher layout as well as the stock `VintagestoryData\Mods`), deletes older `smokelessfirearms*.zip` and legacy `smokelesslever*.zip` copies, and copies
 the new one in. You also need the two dependency zips from `deps/dist/` in that same folder:
 
 * `overhaulliblegacycompat.zip`
@@ -89,7 +89,7 @@ generated from the fork's own animation/entity/item files, but **nothing has bee
 1. **Lever / gate swing direction** – if either swings the wrong way, negate `LEVER_DEG` / `GATE_DEG` in
    `tools/generate_assets.py` and re-run (`python3 tools/generate_assets.py /path/to/Firearmsfork`).
 2. **Arm poses** – reused from the fork's carbine (loading uses its "prime" pose, near the receiver). Adjust in
-   `resources/assets/smokelesslever/config/animations/leveraction.json`. `BulletTransform` (the cartridge shown at
+   `resources/assets/smokelessfirearms/config/animations/leveraction.json`. `BulletTransform` (the cartridge shown at
    the gate while loading) in `itemtypes/leveraction.json` will likely need nudging.
 3. **Base-game item codes** used in recipes: confirmed from the fork's own recipes / official source: `game:saltpeter`,
    `game:powder-sulfur`, `game:blastingpowder`, `game:metalplate-brass`, `game:metalplate-steel`,
@@ -123,7 +123,7 @@ still isn't found, install the VSImGui mod from the mod DB and reference its `VS
 instead of the package in the two dependency csproj files.
 
 ### Upgrading
-Delete older `smokelesslever_*.zip` files from your Mods folders before installing the new release.
+The installer removes older `smokelessfirearms_*.zip` releases and legacy `smokelesslever_*.zip` files before copying the new release.
 
 ### "Assembly with same name is already loaded" / mod missing from creative after an update
 The game cannot unload a code mod. If you replace the zip while the game (or launcher) is still running, the old
@@ -131,8 +131,8 @@ assembly stays in memory and the new one is rejected, so the whole mod is skippe
 `.\scripts\install.ps1`, start fresh. Since 0.1.2 the assembly name includes the version, so a version bump can no longer
 collide with an older copy in memory, but a running game still keeps running the old code until restarted.
 
-After starting, `client-main.log` should contain `Mod 'smokelesslever_0.1.8.zip' (smokelesslever)` and
-`LeverAction.LeverActionModSystem`, and no `[Error]` lines mentioning smokelesslever.
+After starting, `client-main.log` should contain `Mod 'smokelessfirearms_0.1.8.zip' (smokelessfirearms)` and
+`SmokelessFirearms.SmokelessFirearmsModSystem`, and no `[Error]` lines mentioning smokelessfirearms.
 =======
 # dev
 >>>>>>> 0b96e1d77b90c02979567030c994876cba0b3266

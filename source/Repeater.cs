@@ -13,7 +13,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Server;
 
-namespace LeverAction;
+namespace SmokelessFirearms;
 
 /// <summary>
 /// Side-loading tube-magazine repeater, built on Firearmsfork's muzzleloader state machine.
@@ -175,7 +175,7 @@ public sealed class Ak47Server : RepeaterServer
         if (loadingMagazine) slot.Itemstack?.Attributes.SetBool("ak47mag-loaded", true);
         if (ejectEmpty && empty)
         {
-            Item? emptyMag = Api.World.GetItem(new AssetLocation("smokelesslever:ak47mag-empty"));
+            Item? emptyMag = Api.World.GetItem(new AssetLocation("smokelessfirearms:ak47mag-empty"));
             if (emptyMag != null)
             {
                 ItemStack stack = new(emptyMag);
@@ -243,7 +243,7 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
 
             ItemInventoryBuffer magazine = new();
             magazine.Read(inSlot, "magazine");
-            dsc.AppendLine(Lang.Get("smokelesslever:iteminfo-rounds", magazine.Items.Count, Stats.MagazineSize));
+            dsc.AppendLine(Lang.Get("smokelessfirearms:iteminfo-rounds", magazine.Items.Count, Stats.MagazineSize));
             magazine.Clear();
 
             dsc.AppendLine("");
@@ -307,7 +307,7 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
         }
         catch (Exception exception)
         {
-            clientAPI.Logger.Warning($"[smokelesslever] Delayed client logic init for {Code}: {exception.Message}");
+            clientAPI.Logger.Warning($"[smokelessfirearms] Delayed client logic init for {Code}: {exception.Message}");
         }
     }
 
@@ -319,7 +319,7 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
         }
         catch (Exception exception)
         {
-            serverAPI.Logger.Warning($"[smokelesslever] Delayed server logic init for {Code}: {exception.Message}");
+            serverAPI.Logger.Warning($"[smokelessfirearms] Delayed server logic init for {Code}: {exception.Message}");
         }
     }
 }

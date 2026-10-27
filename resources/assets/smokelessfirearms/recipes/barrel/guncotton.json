@@ -1,0 +1,33 @@
+[
+  {
+    "code": "guncotton",
+    "sealHours": 12,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:flaxfibers",
+        "quantity": 8
+      },
+      {
+        "type": "item",
+        "code": "game:saltpeter",
+        "quantity": 2
+      },
+      {
+        "type": "item",
+        "code": "game:powder-sulfur",
+        "quantity": 2
+      },
+      {
+        "type": "item",
+        "code": "game:waterportion",
+        "litres": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:guncotton",
+      "quantity": 8
+    }
+  }
+]

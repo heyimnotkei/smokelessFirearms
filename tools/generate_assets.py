@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerates everything under resources/assets/smokelesslever.
+"""Regenerates everything under resources/assets/smokelessfirearms.
 
 Needs the Firearmsfork repo checked out (it derives the arm/hand animation poses,
 projectile entity and item behaviours from it so they stay structurally valid):
@@ -12,7 +12,7 @@ import copy, json, os, sys, random
 from PIL import Image, ImageDraw
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-DOM = "smokelesslever"
+DOM = "smokelessfirearms"
 A = os.path.join(ROOT, "resources", "assets", DOM)
 FORK = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "..", "Firearmsfork")
 FA = os.path.join(FORK, "resources", "assets", "maltiezfirearms")
@@ -250,7 +250,7 @@ def build_anims():
 # ---- items ---------------------------------------------------------------
 def build_rifle_item():
     it = load_json(os.path.join(FA, "itemtypes", "firearms", "carbine.json"))
-    it["class"] = "LeverAction:Repeater"
+    it["class"] = "SmokelessFirearms:Repeater"
     it["code"] = "leveraction"
     it["variantgroups"] = [{"code": "type", "states": ["carbine"]}]
     it["durability"] = 1200

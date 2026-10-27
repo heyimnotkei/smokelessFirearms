@@ -1,0 +1,254 @@
+[
+  {
+    "ingredientPattern": "H,P",
+    "width": 1,
+    "height": 2,
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-brass"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:casing",
+      "quantity": 4
+    }
+  },
+  {
+    "ingredientPattern": "H,P",
+    "width": 1,
+    "height": 2,
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-brass"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:shotguncasing",
+      "quantity": 4
+    }
+  },
+  {
+    "ingredientPattern": "H,P,B",
+    "width": 1,
+    "height": 3,
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "P": {
+        "type": "item",
+        "code": "game:metalplate-brass"
+      },
+      "B": {
+        "type": "item",
+        "code": "game:blastingpowder"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:primer",
+      "quantity": 6
+    }
+  },
+  {
+    "ingredientPattern": "CPM,SB ",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "smokelessfirearms:casing",
+        "quantity": 4
+      },
+      "P": {
+        "type": "item",
+        "code": "smokelessfirearms:primer",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "smokelessfirearms:smokelesspowder",
+        "quantity": 2
+      },
+      "B": {
+        "type": "item",
+        "code": "maltiezfirearms:bullet-lead",
+        "quantity": 4
+      },
+      "M": {
+        "type": "item",
+        "code": "smokelessfirearms:leveractionmechanism",
+        "isTool": true
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:cartridge-lead",
+      "quantity": 4
+    }
+  },
+  {
+    "ingredientPattern": "CPM,SB ",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "smokelessfirearms:casing",
+        "quantity": 4
+      },
+      "P": {
+        "type": "item",
+        "code": "smokelessfirearms:primer",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "smokelessfirearms:smokelesspowder",
+        "quantity": 2
+      },
+      "B": {
+        "type": "item",
+        "code": "maltiezfirearms:bullet-copper",
+        "quantity": 4
+      },
+      "M": {
+        "type": "item",
+        "code": "smokelessfirearms:leveractionmechanism",
+        "isTool": true
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:cartridge-copper",
+      "quantity": 4
+    }
+  },
+  {
+    "ingredientPattern": "CPM,SB ",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "smokelessfirearms:shotguncasing",
+        "quantity": 4
+      },
+      "P": {
+        "type": "item",
+        "code": "smokelessfirearms:primer",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "smokelessfirearms:smokelesspowder",
+        "quantity": 2
+      },
+      "B": {
+        "type": "item",
+        "code": "maltiezfirearms:pellet-lead",
+        "quantity": 32
+      },
+      "M": {
+        "type": "item",
+        "code": "smokelessfirearms:shotgunmechanism",
+        "isTool": true
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:shotshell-buckshot",
+      "quantity": 4
+    }
+  },
+  {
+    "ingredientPattern": "CPM,SB ",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "smokelessfirearms:shotguncasing",
+        "quantity": 4
+      },
+      "P": {
+        "type": "item",
+        "code": "smokelessfirearms:primer",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "smokelessfirearms:smokelesspowder",
+        "quantity": 2
+      },
+      "B": {
+        "type": "item",
+        "code": "maltiezfirearms:slug-lead",
+        "quantity": 4
+      },
+      "M": {
+        "type": "item",
+        "code": "smokelessfirearms:shotgunmechanism",
+        "isTool": true
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:shotshell-slug",
+      "quantity": 4
+    }
+  },
+  {
+    "ingredientPattern": "CPM,SB ",
+    "width": 3,
+    "height": 2,
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "smokelessfirearms:casing",
+        "quantity": 4
+      },
+      "P": {
+        "type": "item",
+        "code": "smokelessfirearms:primer",
+        "quantity": 4
+      },
+      "M": {
+        "type": "item",
+        "code": "smokelessfirearms:rollingblockmechanism",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "code": "smokelessfirearms:smokelesspowder",
+        "quantity": 2
+      },
+      "B": {
+        "type": "item",
+        "code": "maltiezfirearms:bullet-lead",
+        "quantity": 4
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "smokelessfirearms:heavycartridge-50",
+      "quantity": 4
+    }
+  }
+]
