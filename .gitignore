@@ -1,6 +1,8 @@
 bin/
 obj/
 Releases/
+scripts/
+tools/
 deps/
 external/
 Properties/localSettings.props

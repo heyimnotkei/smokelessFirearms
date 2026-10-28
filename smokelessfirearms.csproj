@@ -62,7 +62,7 @@
     <Reference Include="cairo-sharp" HintPath="$(GameDirectory)/Lib/cairo-sharp.dll" Private="false" />
     <Reference Include="SkiaSharp" HintPath="$(GameDirectory)/Lib/SkiaSharp.dll" Private="false" />
     <Reference Include="$(GameDirectory)/Lib/OpenTK*.dll" Private="false" />
-    <!-- FirearmsFork.dll + OverhaullibLegacyCompat.dll (see README / scripts/setup-deps) -->
+    <!-- FirearmsFork.dll + OverhaullibLegacyCompat.dll (see README build instructions) -->
     <Reference Include="$(ExternalLibs)/**/*.dll" Private="false" Condition="Exists('$(ExternalLibs)')" />
   </ItemGroup>
 
