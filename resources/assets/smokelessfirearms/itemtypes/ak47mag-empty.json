@@ -27,11 +27,12 @@
   },
   "tpHandTransform": {
     "translation": {
-      "x": 0,
-      "z": 0,
-      "y": 0
+      "x": -0.8,
+      "z": -0.8,
+      "y": -0.1
     },
-    "scale": 0.8
+    "scale": 0.6,
+    "rotation": { "x": 0, "y": 0, "z": 0 }
   },
   "maxstacksize": 16,
   "code": "ak47mag-empty",
@@ -39,7 +40,9 @@
     "base": "smokelessfirearms:item/ak47mag"
   },
   "fpHandTransform": {
-    "scale": 1
+    "scale": 0.6,
+    "translation": { "y": -0.1 },
+    "rotation": { "x": 0, "y": 0, "z": 0 }
   },
   "class": "Item",
   "textures": {

@@ -67,9 +67,9 @@
   },
   "tpHandTransform": {
     "translation": {
-      "x": 0,
+      "x": -1.2,
       "y": 0,
-      "z": 0
+      "z": -0.8
     },
     "rotation": {
       "x": 0,
@@ -81,7 +81,7 @@
       "y": 0.039,
       "z": 0.5
     },
-    "scale": 0.8
+    "scale": 0.45
   },
   "groundTransform": {
     "translation": {
@@ -112,7 +112,7 @@
   "fpHandTransform": {
     "translation": {
       "x": 0,
-      "y": 0,
+      "y": -0.1,
       "z": 0
     },
     "rotation": {
@@ -125,6 +125,6 @@
       "y": 0.039,
       "z": 0.5
     },
-    "scale": 1.0
+    "scale": 0.6
   }
 }

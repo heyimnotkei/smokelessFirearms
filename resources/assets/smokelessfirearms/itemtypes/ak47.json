@@ -80,7 +80,7 @@
       "smokelessfirearms:ak47-load"
     ],
     "PrimeAnimation": "smokelessfirearms:ak47-prime",
-    "AimAnimation": "smokelessfirearms:rollingblock-aim",
+    "AimAnimation": "smokelessfirearms:ak47-aim",
     "ShootAnimation": [
       "smokelessfirearms:ak47-shoot"
     ],
@@ -188,7 +188,7 @@
     "translation": {
       "x": 0.2,
       "z": 2,
-      "y": 0.6
+      "y": 1.0
     },
     "rotation": {
       "x": 0,

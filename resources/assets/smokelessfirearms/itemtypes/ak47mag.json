@@ -26,11 +26,11 @@
     }
   },
   "tpHandTransform": {
-    "scale": 0.8,
+    "scale": 0.6,
     "translation": {
-      "x": 0,
-      "z": 0,
-      "y": 0
+      "x": -0.8,
+      "z": -0.8,
+      "y": -0.1
     },
     "origin": {
       "x": 0.5,
@@ -43,7 +43,7 @@
       "y": 0
     }
   },
-  "maxstacksize": 1,
+  "maxstacksize": 16,
   "code": "ak47mag",
   "behaviors": [
     {
@@ -69,11 +69,11 @@
     }
   ],
   "fpHandTransform": {
-    "scale": 1,
+    "scale": 0.6,
     "translation": {
       "x": 0,
       "z": 0,
-      "y": 0
+      "y": -0.1
     },
     "origin": {
       "x": 0.5,

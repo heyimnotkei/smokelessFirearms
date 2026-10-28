@@ -23,9 +23,11 @@ Prereqs: Vintage Story 1.22.x and **.NET SDK 10**. Copy `FirearmsFork.dll` and `
 # 1. point at your game folder (the one containing VintagestoryAPI.dll)
 export VINTAGE_STORY=/path/to/vintagestory          # Windows PowerShell: $env:VINTAGE_STORY="$env:APPDATA\Vintagestory"
 
-# 2. build this mod  ->  Releases/smokelessfirearms_0.1.8.zip
+# 2. build this mod  ->  Releases/smokelessfirearms_1.8.3.zip
 dotnet build -c Release
 ```
+
+For each subsequent update, increment the patch number in `ModVersion` (for example, `1.8.4`, then `1.8.5`) before building.
 
 ## Install
 
