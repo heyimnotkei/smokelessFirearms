@@ -15,6 +15,16 @@ Built on **Firearmsfork** (Alodh1) which runs on **Overhaul lib – legacy compa
 animation or input systems), so it cannot host a firearm yet; the legacy-compat lib is the one that
 works on 1.22.x.
 
+## Credits
+
+- **Smokeless Firearms:** heyimnotkei, project code and original assets.
+- **Firearms / Firearmsfork:** Maltiez, original mod creator; Alodh (Alodh1), Firearmsfork author and maintainer. This project uses Firearmsfork APIs and firearm animation references. [Firearmsfork repository](https://github.com/Alodh1/Firearmsfork)
+- **Overhaul lib – Legacy Compat:** Maltiez and Alodh (Alodh1), mod authors. This project depends on the legacy-compat implementation. [Overhaullib-Legacy repository](https://github.com/Alodh1/Overhaullib-Legacy)
+
+## Usage and redistribution
+
+Permission is not granted to re-upload, mirror, or redistribute Smokeless Firearms, whether in its original or a modified form. Repacking, bundling, or incorporating this mod, in whole or in part, into another mod, modpack, archive, or release is strictly prohibited. Any exception requires prior written authorization from the project owner.
+
 ## Build
 
 Prereqs: Vintage Story 1.22.x and **.NET SDK 10**. Copy `FirearmsFork.dll` and `OverhaullibLegacyCompat.dll` into `external/` before building.

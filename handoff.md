@@ -6,6 +6,7 @@ At the start of each new chat on this project, read this file. Record code chang
 
 - Latest published release: replacement `v1.8.6`; the prior `v1.8.6` and `v1.8.7` releases/tags were deleted. The replacement archive is `Releases/smokelessfirearms_1.8.6.zip`.
 - Branch: `main`; current fix commit `cf07732` is pushed and published as replacement tag `v1.8.6`.
+- README now has a standalone credits section for this project, Firearms/Firearmsfork, and Overhaul lib Legacy Compat, plus a formal no-reupload/no-repacking clause. Documentation update is pending commit and push; mod version/release remain `1.8.6`.
 - The AK shot packet now keeps the server's loaded item ID; only the server swaps model state after a successful shot/reload, preventing the prior `1/30` rejection loop.
 - The AK hand position uses transform X (not the previously tried Z axis): first-person X `-0.4`, third-person X `-0.6`, an additional `0.1` forward from the prior positions. Needs in-game confirmation. Size and rotation are unchanged.
 - The Vintage Story 1.22.7 Release build succeeds with zero warnings and errors.
