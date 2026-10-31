@@ -4,8 +4,8 @@ At the start of each new chat on this project, read this file. Record code chang
 
 ## Current project stage
 
-- Latest published release: `v1.8.6` (the user reports this build pushed the AK left and broke the magazine; supersede it with `v1.8.7`).
-- Branch: `main`; current recovery work is built as `1.8.7` and is not yet committed, pushed, or released.
+- Latest published release: `v1.8.7` (supersedes the user-reported broken `v1.8.6`).
+- Branch: `main`; recovery commit `163335e` is pushed. Archive: `Releases/smokelessfirearms_1.8.7.zip`.
 - The failed `1.8.6` loaded-model merge and hand-transform changes are reverted to the pre-`1.8.6` AK state. Model sizes and rotations are unchanged.
 - The Vintage Story 1.22.7 Release build succeeds with zero warnings and errors.
 - No in-game check has been done for the new item-state swap.
@@ -22,4 +22,4 @@ At the start of each new chat on this project, read this file. Record code chang
 
 ## Next step
 
-Release `v1.8.7` after committing and pushing this recovery. Then install it and verify in game that the AK switches to `ak47_empty` at `0/30`, returns to the loaded model after reloading, and keeps the magazine geometry intact. In-game behavior and positioning have not yet been verified. Leave lever-action files untouched; do not change model size or rotation unless asked.
+Install `v1.8.7` and verify in game that the AK switches to `ak47_empty` at `0/30`, returns to the loaded model after reloading, and keeps the magazine geometry intact. In-game behavior and positioning have not yet been verified. Leave lever-action files untouched; do not change model size or rotation unless asked.
