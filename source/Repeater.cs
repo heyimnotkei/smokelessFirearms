@@ -11,6 +11,7 @@ using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
+using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Server;
 
 namespace SmokelessFirearms;
@@ -40,19 +41,19 @@ public class RepeaterClient : MuzzleloaderClient
     [ActionEventHandler(EnumEntityAction.LeftMouseDown, ActionState.Active)]
     protected override bool ShootAutomatic(ItemSlot slot, EntityPlayer player, ref int state, ActionEventData eventData, bool mainHand, AttackDirection direction)
     {
-        if (Item.Code.Path != "ak47") return base.ShootAutomatic(slot, player, ref state, eventData, mainHand, direction);
+        if (!Ak47Item.IsAk47(Item)) return base.ShootAutomatic(slot, player, ref state, eventData, mainHand, direction);
         return Stats.AutomaticFire && TryShoot(slot, player, ref state, eventData, mainHand);
     }
 
     protected override bool TryShoot(ItemSlot slot, EntityPlayer player, ref int state, ActionEventData eventData, bool mainHand)
     {
-        if (Item.Code.Path != "ak47") return base.TryShoot(slot, player, ref state, eventData, mainHand);
+        if (!Ak47Item.IsAk47(Item)) return base.TryShoot(slot, player, ref state, eventData, mainHand);
         return TryShootAk47(slot, player, ref state, eventData, mainHand);
     }
 
     protected override bool TryShootAutomaticContinuation(ItemSlot slot, EntityPlayer player, bool mainHand)
     {
-        if (Item.Code.Path != "ak47") return base.TryShootAutomaticContinuation(slot, player, mainHand);
+        if (!Ak47Item.IsAk47(Item)) return base.TryShootAutomaticContinuation(slot, player, mainHand);
         int state = (int)MuzzleloaderState.Aim;
         return TryShootAk47(slot, player, ref state, default, mainHand, continuation: true);
     }
@@ -67,7 +68,7 @@ public class RepeaterClient : MuzzleloaderClient
         bool loaded = roundsBeforeShot > 0;
         Inventory.Clear();
         if (!loaded) return false;
-        SetAk47RenderVariant(slot, roundsBeforeShot == 1 ? 1 : 0);
+        if (roundsBeforeShot == 1) Ak47Item.SetModelForAmmo(slot, 0, Api.World);
 
         RangedWeaponSystem.SendStatusChange(player, RangedWeaponStatus.TriggeredShot, mainHand);
         SetState(MuzzleloaderState.Shoot, mainHand);
@@ -96,10 +97,10 @@ public class RepeaterClient : MuzzleloaderClient
     {
         EmptyReloadSession = false;
         base.OnSelected(slot, player, mainHand, ref state);
-        if (Item.Code.Path == "ak47")
+        if (Ak47Item.IsAk47(Item))
         {
             Inventory.Read(slot, InventoryId);
-            SetAk47RenderVariant(slot, Inventory.Items.Count == 0 ? 1 : 0);
+            Ak47Item.SetModelForAmmo(slot, Inventory.Items.Count, Api.World);
             Inventory.Clear();
         }
     }
@@ -108,13 +109,6 @@ public class RepeaterClient : MuzzleloaderClient
     {
         EmptyReloadSession = false;
         base.OnDeselected(player, mainHand, ref state);
-    }
-
-    private static void SetAk47RenderVariant(ItemSlot slot, int renderVariant)
-    {
-        if (slot.Itemstack == null || slot.Itemstack.Attributes.GetInt("renderVariant") == renderVariant) return;
-        slot.Itemstack.Attributes.SetInt("renderVariant", renderVariant);
-        slot.MarkDirty();
     }
 
     protected override void LoadServerCallback(bool success, bool lastAmmoToLoad, bool mainHand, int reloadActionId, ItemSlot slot, int expectedMagazineCount)
@@ -178,6 +172,18 @@ public sealed class Ak47Server : RepeaterServer
 {
     public Ak47Server(ICoreServerAPI api, Item item) : base(api, item) { }
 
+    public override bool Shoot(IServerPlayer player, ItemSlot slot, ShotPacket packet, Entity shooter)
+    {
+        bool fired = base.Shoot(player, slot, packet, shooter);
+        if (fired)
+        {
+            Inventory.Read(slot, InventoryId);
+            Ak47Item.SetModelForAmmo(slot, Inventory.Items.Count, Api.World);
+            Inventory.Clear();
+        }
+        return fired;
+    }
+
     public override bool Reload(IServerPlayer player, ItemSlot slot, ItemSlot? ammoSlot, ReloadPacket packet)
     {
         bool loadingMagazine = ammoSlot?.Itemstack?.Item?.Code.Path == "ak47mag" && packet.Amount > 0;
@@ -189,7 +195,7 @@ public sealed class Ak47Server : RepeaterServer
         if (!base.Reload(player, slot, ammoSlot, packet)) return false;
         if (loadingMagazine) slot.Itemstack?.Attributes.SetBool("ak47mag-loaded", true);
         Inventory.Read(slot, InventoryId);
-        slot.Itemstack?.Attributes.SetInt("renderVariant", Inventory.Items.Count == 0 ? 1 : 0);
+        Ak47Item.SetModelForAmmo(slot, Inventory.Items.Count, Api.World);
         Inventory.Clear();
         if (ejectEmpty && empty)
         {
@@ -251,18 +257,13 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
     public override void OnHeldIdle(ItemSlot slot, EntityAgent byEntity)
     {
         base.OnHeldIdle(slot, byEntity);
-        if (Code.Path != "ak47" || slot.Itemstack == null) return;
+        if (!Ak47Item.IsAk47(this) || slot.Itemstack == null) return;
 
         ItemInventoryBuffer magazine = new();
         magazine.Read(slot, "magazine");
-        int renderVariant = magazine.Items.Count == 0 ? 1 : 0;
+        int rounds = magazine.Items.Count;
         magazine.Clear();
-
-        if (slot.Itemstack.Attributes.GetInt("renderVariant") != renderVariant)
-        {
-            slot.Itemstack.Attributes.SetInt("renderVariant", renderVariant);
-            slot.MarkDirty();
-        }
+        Ak47Item.SetModelForAmmo(slot, rounds, byEntity.World);
     }
 
     public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
@@ -361,6 +362,21 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
 
 public sealed class Ak47Item : RepeaterItem
 {
+    public static bool IsAk47(Item item) => item.Code.Path is "ak47" or "ak47-empty";
+
+    public static void SetModelForAmmo(ItemSlot slot, int rounds, IWorldAccessor world)
+    {
+        ItemStack? current = slot.Itemstack;
+        string targetCode = rounds == 0 ? "ak47-empty" : "ak47";
+        if (current?.Item?.Code.Path == targetCode) return;
+
+        Item? target = world.GetItem(new AssetLocation($"smokelessfirearms:{targetCode}"));
+        if (current == null || target == null) return;
+
+        slot.Itemstack = new ItemStack(target, current.StackSize) { Attributes = current.Attributes.Clone() };
+        slot.MarkDirty();
+    }
+
     protected override RepeaterClient CreateClientLogic(ICoreClientAPI api) => new Ak47Client(api, this);
     protected override RepeaterServer CreateServerLogic(ICoreServerAPI api) => new Ak47Server(api, this);
 }

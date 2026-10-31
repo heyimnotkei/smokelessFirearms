@@ -44,5 +44,7 @@
   "item-ak47": "AK-47 (7.62×39mm)",
   "itemdesc-ak47": "Full-auto AK-47 with a 30-round detachable magazine. Reload when empty; the spent magazine is returned.",
   "item-ak47mag": "AK-47 magazine (30 rounds)",
-  "item-ak47mag-empty": "Empty AK-47 magazine"
+  "item-ak47mag-empty": "Empty AK-47 magazine",
+  "item-ak47-empty": "AK-47 (7.62×39mm)",
+  "itemdesc-ak47-empty": "Full-auto AK-47 with a 30-round detachable magazine. Reload when empty; the spent magazine is returned."
 }

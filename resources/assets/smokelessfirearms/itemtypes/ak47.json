@@ -192,7 +192,7 @@
   "fpHandTransform": {
     "translation": {
       "x": 0.2,
-      "z": 3,
+      "z": 2,
       "y": 1
     },
     "rotation": {
@@ -211,7 +211,7 @@
     "translation": {
       "x": 0,
       "y": 0,
-      "z": 1
+      "z": 0
     },
     "rotation": {
       "x": 0,
