@@ -68,8 +68,6 @@ public class RepeaterClient : MuzzleloaderClient
         bool loaded = roundsBeforeShot > 0;
         Inventory.Clear();
         if (!loaded) return false;
-        if (roundsBeforeShot == 1) Ak47Item.SetModelForAmmo(slot, 0, Api.World);
-
         RangedWeaponSystem.SendStatusChange(player, RangedWeaponStatus.TriggeredShot, mainHand);
         SetState(MuzzleloaderState.Shoot, mainHand);
         string animation = GetShootingAnimation(slot, mainHand ? Stats.ShootAnimation : Stats.ShootAnimationOffhand);
@@ -97,12 +95,6 @@ public class RepeaterClient : MuzzleloaderClient
     {
         EmptyReloadSession = false;
         base.OnSelected(slot, player, mainHand, ref state);
-        if (Ak47Item.IsAk47(Item))
-        {
-            Inventory.Read(slot, InventoryId);
-            Ak47Item.SetModelForAmmo(slot, Inventory.Items.Count, Api.World);
-            Inventory.Clear();
-        }
     }
 
     public override void OnDeselected(EntityPlayer player, bool mainHand, ref int state)
@@ -257,7 +249,7 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
     public override void OnHeldIdle(ItemSlot slot, EntityAgent byEntity)
     {
         base.OnHeldIdle(slot, byEntity);
-        if (!Ak47Item.IsAk47(this) || slot.Itemstack == null) return;
+        if (byEntity.World.Side != EnumAppSide.Server || !Ak47Item.IsAk47(this) || slot.Itemstack == null) return;
 
         ItemInventoryBuffer magazine = new();
         magazine.Read(slot, "magazine");
