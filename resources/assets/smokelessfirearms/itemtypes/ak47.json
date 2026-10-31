@@ -154,7 +154,12 @@
     "AutomaticFire": true
   },
   "shape": {
-    "base": "smokelessfirearms:firearms/ak47"
+    "base": "smokelessfirearms:firearms/ak47",
+    "alternates": [
+      {
+        "base": "smokelessfirearms:firearms/ak47_empty"
+      }
+    ]
   },
   "heldTpHitAnimation": "firearmsempty",
   "heldLeftTpIdleAnimation": "firearmsempty",

@@ -230,6 +230,23 @@ public class RepeaterItem : Item, IHasWeaponLogic, IHasRangedWeaponLogic, IHasDy
     public AnimationRequestByCode? GetIdleAnimation(EntityPlayer player, ItemSlot slot, bool mainHand) => mainHand ? IdleAnimation : IdleAnimationOffhand;
     public AnimationRequestByCode? GetReadyAnimation(EntityPlayer player, ItemSlot slot, bool mainHand) => mainHand ? ReadyAnimation : ReadyAnimationOffhand;
 
+    public override void OnHeldIdle(ItemSlot slot, EntityAgent byEntity)
+    {
+        base.OnHeldIdle(slot, byEntity);
+        if (Code.Path != "ak47" || slot.Itemstack == null) return;
+
+        ItemInventoryBuffer magazine = new();
+        magazine.Read(slot, "magazine");
+        int renderVariant = magazine.Items.Count == 0 ? 1 : 0;
+        magazine.Clear();
+
+        if (slot.Itemstack.Attributes.GetInt("renderVariant") != renderVariant)
+        {
+            slot.Itemstack.Attributes.SetInt("renderVariant", renderVariant);
+            slot.MarkDirty();
+        }
+    }
+
     public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
     {
         if (Stats != null && Stats.ProficiencyStat != "")
