@@ -1,580 +1,279 @@
 {
-  "editor": {
-    "allAngles": false,
-    "entityTextureMode": false
-  },
-  "textureWidth": 16,
-  "textureHeight": 16,
-  "textureSizes": {},
-  "textures": {
-    "metal": "game:block/metal/plate/steel",
-    "wood": "game:block/wood/debarked/oak",
-    "stock-wood": "game:block/wood/debarked/oak",
-    "brass": "game:block/metal/plate/brass"
-  },
-  "elements": [
-    {
-      "name": "stock_butt",
-      "from": [
-        -0.5060000000000002,
-        -3.3770000000000002,
-        1.15
-      ],
-      "to": [
-        0.5690000000000008,
-        0.28500000000000014,
-        7.77
-      ],
-      "rotationOrigin": [
-        0.03200000000000003,
-        -1.5460000000000003,
-        4.46
-      ],
-      "faces": {
-        "west": {
-          "texture": "#stock-wood"
-        },
-        "north": {
-          "texture": "#stock-wood"
-        },
-        "east": {
-          "texture": "#stock-wood"
-        },
-        "south": {
-          "texture": "#stock-wood"
-        },
-        "up": {
-          "texture": "#stock-wood"
-        },
-        "down": {
-          "texture": "#stock-wood"
-        }
-      },
-      "children": [],
-      "rotationX": 12.6
-    },
-    {
-      "name": "stock_wrist",
-      "from": [
-        -0.5019999999999998,
-        -1.9500000000000002,
-        -0.829
-      ],
-      "to": [
-        0.5660000000000007,
-        0.35499999999999954,
-        1.353
-      ],
-      "rotationOrigin": [
-        0.03200000000000003,
-        -0.798,
-        0.262
-      ],
-      "faces": {
-        "west": {
-          "texture": "#stock-wood"
-        },
-        "north": {
-          "texture": "#stock-wood"
-        },
-        "east": {
-          "texture": "#stock-wood"
-        },
-        "south": {
-          "texture": "#stock-wood"
-        },
-        "up": {
-          "texture": "#stock-wood"
-        },
-        "down": {
-          "texture": "#stock-wood"
-        }
-      },
-      "children": [],
-      "rotationX": -3
-    },
-    {
-      "name": "receiver",
-      "from": [
-        -0.4219999999999997,
-        -0.4830000000000001,
-        -8.278
-      ],
-      "to": [
-        0.48799999999999955,
-        1.9589999999999996,
-        -0.669
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "lever_top",
-      "from": [
-        -0.04499999999999993,
-        -0.6080000000000001,
-        -4.879
-      ],
-      "to": [
-        0.27500000000000036,
-        -0.40800000000000036,
-        -0.663
-      ],
-      "rotationOrigin": [
-        0.11500000000000021,
-        -0.40000000000000036,
-        -4.5
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "lever_bot",
-      "from": [
-        -0.04499999999999993,
-        -2.1790000000000003,
-        -4.879
-      ],
-      "to": [
-        0.27500000000000036,
-        -1.979,
-        -0.663
-      ],
-      "rotationOrigin": [
-        0.11500000000000021,
-        -0.40000000000000036,
-        -4.5
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "lever_rear",
-      "from": [
-        -0.03500000000000014,
-        -2.1790000000000003,
-        -0.863
-      ],
-      "to": [
-        0.26500000000000057,
-        -0.40800000000000036,
-        -0.663
-      ],
-      "rotationOrigin": [
-        0.11500000000000021,
-        -0.40000000000000036,
-        -4.5
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "lever_fore",
-      "from": [
-        -0.03500000000000014,
-        -2.1790000000000003,
-        -4.879
-      ],
-      "to": [
-        0.26500000000000057,
-        -0.40800000000000036,
-        -4.679
-      ],
-      "rotationOrigin": [
-        0.11500000000000021,
-        -0.40000000000000036,
-        -4.5
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "hammer",
-      "from": [
-        -0.12399999999999967,
-        1.851,
-        -3.481
-      ],
-      "to": [
-        0.1880000000000006,
-        2.016,
-        -3.173
-      ],
-      "rotationOrigin": [
-        0.03200000000000003,
-        1.8499999999999996,
-        -3.6
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "forend",
-      "from": [
-        -0.4059999999999997,
-        0.2859999999999996,
-        -15.894
-      ],
-      "to": [
-        0.47000000000000064,
-        1.4909999999999997,
-        -8.017
-      ],
-      "faces": {
-        "west": {
-          "texture": "#wood"
-        },
-        "north": {
-          "texture": "#wood"
-        },
-        "east": {
-          "texture": "#wood"
-        },
-        "south": {
-          "texture": "#wood"
-        },
-        "up": {
-          "texture": "#wood"
-        },
-        "down": {
-          "texture": "#wood"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "barrel_a",
-      "from": [
-        -0.4059999999999997,
-        1.0439999999999996,
-        -23.891
-      ],
-      "to": [
-        0.4559999999999995,
-        1.9059999999999997,
-        -8.376
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    },
-    {
-      "name": "barrel_b",
-      "from": [
-        -0.4059999999999997,
-        1.0439999999999996,
-        -23.871
-      ],
-      "to": [
-        0.4559999999999995,
-        1.9059999999999997,
-        -8.396
-      ],
-      "rotationOrigin": [
-        0.025000000000000355,
-        1.4749999999999996,
-        -16.134
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": [],
-      "rotationZ": -45
-    },
-    {
-      "name": "sight",
-      "from": [
-        -0.20099999999999962,
-        2.1029999999999998,
-        -23.65
-      ],
-      "to": [
-        0.2550000000000008,
-        2.367,
-        -22.809
-      ],
-      "faces": {
-        "west": {
-          "texture": "#metal"
-        },
-        "north": {
-          "texture": "#metal"
-        },
-        "east": {
-          "texture": "#metal"
-        },
-        "south": {
-          "texture": "#metal"
-        },
-        "up": {
-          "texture": "#metal"
-        },
-        "down": {
-          "texture": "#metal"
-        }
-      },
-      "children": []
-    }
-  ],
-  "animations": [
-    {
-      "name": "Lever",
-      "code": "lever",
-      "quantityFrames": 17,
-      "onActivityStopped": "Stop",
-      "onAnimationEnd": "Stop",
-      "keyframes": [
-        {
-          "frame": 0,
-          "elements": {
-            "lever_top": {
-              "rotationZ": 0
-            },
-            "lever_bot": {
-              "rotationZ": 0
-            },
-            "lever_rear": {
-              "rotationZ": 0
-            },
-            "lever_fore": {
-              "rotationZ": 0
-            }
-          }
-        },
-        {
-          "frame": 8,
-          "elements": {
-            "lever_top": {
-              "rotationZ": -30
-            },
-            "lever_bot": {
-              "rotationZ": -30
-            },
-            "lever_rear": {
-              "rotationZ": -30
-            },
-            "lever_fore": {
-              "rotationZ": -30
-            }
-          }
-        },
-        {
-          "frame": 16,
-          "elements": {
-            "lever_top": {
-              "rotationZ": 0
-            },
-            "lever_bot": {
-              "rotationZ": 0
-            },
-            "lever_rear": {
-              "rotationZ": 0
-            },
-            "lever_fore": {
-              "rotationZ": 0
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Cock",
-      "code": "cock",
-      "quantityFrames": 9,
-      "onActivityStopped": "Stop",
-      "onAnimationEnd": "Hold",
-      "keyframes": [
-        {
-          "frame": 0,
-          "elements": {
-            "hammer": {
-              "rotationZ": 0
-            }
-          }
-        },
-        {
-          "frame": 8,
-          "elements": {
-            "hammer": {
-              "rotationZ": -40
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Fire",
-      "code": "fire",
-      "quantityFrames": 6,
-      "onActivityStopped": "Stop",
-      "onAnimationEnd": "Stop",
-      "keyframes": [
-        {
-          "frame": 0,
-          "elements": {
-            "hammer": {
-              "rotationZ": -40
-            }
-          }
-        },
-        {
-          "frame": 5,
-          "elements": {
-            "hammer": {
-              "rotationZ": 0
-            }
-          }
-        }
-      ]
-    }
-  ]
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"metal": [16, 16],
+		"wood": [16, 16],
+		"stock-wood": [16, 16],
+		"brass": [16, 16]
+	},
+	"textures": {
+		"metal": "game:block/metal/plate/steel",
+		"wood": "game:block/wood/debarked/oak",
+		"stock-wood": "game:block/wood/debarked/oak",
+		"brass": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "stock_butt",
+			"from": [-0.506, -3.377, 1.15],
+			"to": [0.569, 0.285, 7.77],
+			"rotationOrigin": [0.032, -1.546, 4.46],
+			"faces": {
+				"north": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]}
+			},
+			"rotationX": 12.6
+		},
+		{
+			"name": "stock_wrist",
+			"from": [-0.502, -0.8, -1],
+			"to": [0.566, 1.505, 2.25],
+			"rotationOrigin": [0.032, 0.352, 0.091],
+			"faces": {
+				"north": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#stock-wood", "uv": [0, 0, 1, 1]}
+			},
+			"rotationX": 9.5
+		},
+		{
+			"name": "receiver",
+			"from": [-0.422, -0.483, -8.4],
+			"to": [0.488, 1.959, -0.791],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			}
+		},
+		{
+			"name": "lever_top",
+			"from": [-0.045, -0.608, -4.879],
+			"to": [0.275, -0.408, -0.663],
+			"rotationOrigin": [0.115, -0.4, -4.5],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "lever_bot",
+			"from": [-0.045, -2.179, -4.879],
+			"to": [0.275, -1.979, -0.663],
+			"rotationOrigin": [0.115, -0.4, -4.5],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "lever_rear",
+			"from": [-0.035, -2.179, -0.863],
+			"to": [0.265, -0.408, -0.663],
+			"rotationOrigin": [0.115, -0.4, -4.5],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "lever_fore",
+			"from": [-0.035, -2.179, -4.879],
+			"to": [0.265, -0.408, -4.679],
+			"rotationOrigin": [0.115, -0.4, -4.5],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "hammer",
+			"from": [-0.124, 1.851, -3.481],
+			"to": [0.188, 2.016, -3.173],
+			"rotationOrigin": [0.032, 1.85, -3.6],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"children": []
+		},
+		{
+			"name": "forend",
+			"from": [-0.406, 0.286, -15.894],
+			"to": [0.47, 1.491, -8.017],
+			"faces": {
+				"north": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#wood", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#wood", "uv": [0, 0, 1, 1]}
+			}
+		},
+		{
+			"name": "barrel_a",
+			"from": [-0.406, 1.044, -23.891],
+			"to": [0.456, 1.906, -8.376],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			}
+		},
+		{
+			"name": "barrel_b",
+			"from": [-0.406, 1.044, -23.871],
+			"to": [0.456, 1.906, -8.396],
+			"rotationOrigin": [0.025, 1.475, -16.134],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			},
+			"rotationZ": -45
+		},
+		{
+			"name": "sight",
+			"from": [-0.201, 1.8, -23.65],
+			"to": [0.255, 2.064, -22.809],
+			"faces": {
+				"north": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"east": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"south": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"west": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"up": {"texture": "#metal", "uv": [0, 0, 1, 1]},
+				"down": {"texture": "#metal", "uv": [0, 0, 1, 1]}
+			}
+		}
+	],
+	"animations": [
+		{
+			"name": "Lever",
+			"code": "lever",
+			"quantityframes": 17,
+			"onActivityStopped": "Stop",
+			"onAnimationEnd": "Stop",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"lever_top": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"lever_bot": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"lever_rear": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"lever_fore": {"rotationX": 0, "rotationY": 0, "rotationZ": 0}
+					}
+				},
+				{
+					"frame": 8,
+					"elements": {
+						"lever_top": {"rotationX": 0, "rotationY": 0, "rotationZ": -30},
+						"lever_bot": {"rotationX": 0, "rotationY": 0, "rotationZ": -30},
+						"lever_rear": {"rotationX": 0, "rotationY": 0, "rotationZ": -30},
+						"lever_fore": {"rotationX": 0, "rotationY": 0, "rotationZ": -30}
+					}
+				},
+				{
+					"frame": 16,
+					"elements": {
+						"lever_top": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"lever_bot": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"lever_rear": {"rotationX": 0, "rotationY": 0, "rotationZ": 0},
+						"lever_fore": {"rotationX": 0, "rotationY": 0, "rotationZ": 0}
+					}
+				}
+			],
+			"quantityFrames": 17
+		},
+		{
+			"name": "Cock",
+			"code": "cock",
+			"quantityframes": 9,
+			"onActivityStopped": "Stop",
+			"onAnimationEnd": "Hold",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"hammer": {"rotationX": 0, "rotationY": 0, "rotationZ": 0}
+					}
+				},
+				{
+					"frame": 8,
+					"elements": {
+						"hammer": {"rotationX": 0, "rotationY": 0, "rotationZ": -40}
+					}
+				}
+			],
+			"quantityFrames": 9
+		},
+		{
+			"name": "Fire",
+			"code": "fire",
+			"quantityframes": 6,
+			"onActivityStopped": "Stop",
+			"onAnimationEnd": "Stop",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"hammer": {"rotationX": 0, "rotationY": 0, "rotationZ": -40}
+					}
+				},
+				{
+					"frame": 5,
+					"elements": {
+						"hammer": {"rotationX": 0, "rotationY": 0, "rotationZ": 0}
+					}
+				}
+			],
+			"quantityFrames": 6
+		}
+	],
+	"format_version": "26.3",
+	"credit": "Made with Blockbench"
 }
