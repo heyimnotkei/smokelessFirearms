@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Smokeless Firearms</ModName>
     <ModType>code</ModType>
-    <ModVersion>1.8.7</ModVersion>
+    <ModVersion>1.8.6</ModVersion>
     <ModId>smokelessfirearms</ModId>
     <Description>Smokeless powder firearms with matching ammo types and crafting mechanisms Addon for Firearms (fork) on Overhaul lib (legacy compat).</Description>
     <Side>Universal</Side>
