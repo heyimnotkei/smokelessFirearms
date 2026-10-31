@@ -63,9 +63,11 @@ public class RepeaterClient : MuzzleloaderClient
         if (!continuation && InteractionsTester.PlayerTriesToInteract(player, mainHand, eventData)) return false;
 
         Inventory.Read(slot, InventoryId);
-        bool loaded = Inventory.Items.Count > 0;
+        int roundsBeforeShot = Inventory.Items.Count;
+        bool loaded = roundsBeforeShot > 0;
         Inventory.Clear();
         if (!loaded) return false;
+        SetAk47RenderVariant(slot, roundsBeforeShot == 1 ? 1 : 0);
 
         RangedWeaponSystem.SendStatusChange(player, RangedWeaponStatus.TriggeredShot, mainHand);
         SetState(MuzzleloaderState.Shoot, mainHand);
@@ -94,12 +96,25 @@ public class RepeaterClient : MuzzleloaderClient
     {
         EmptyReloadSession = false;
         base.OnSelected(slot, player, mainHand, ref state);
+        if (Item.Code.Path == "ak47")
+        {
+            Inventory.Read(slot, InventoryId);
+            SetAk47RenderVariant(slot, Inventory.Items.Count == 0 ? 1 : 0);
+            Inventory.Clear();
+        }
     }
 
     public override void OnDeselected(EntityPlayer player, bool mainHand, ref int state)
     {
         EmptyReloadSession = false;
         base.OnDeselected(player, mainHand, ref state);
+    }
+
+    private static void SetAk47RenderVariant(ItemSlot slot, int renderVariant)
+    {
+        if (slot.Itemstack == null || slot.Itemstack.Attributes.GetInt("renderVariant") == renderVariant) return;
+        slot.Itemstack.Attributes.SetInt("renderVariant", renderVariant);
+        slot.MarkDirty();
     }
 
     protected override void LoadServerCallback(bool success, bool lastAmmoToLoad, bool mainHand, int reloadActionId, ItemSlot slot, int expectedMagazineCount)
@@ -173,6 +188,9 @@ public sealed class Ak47Server : RepeaterServer
 
         if (!base.Reload(player, slot, ammoSlot, packet)) return false;
         if (loadingMagazine) slot.Itemstack?.Attributes.SetBool("ak47mag-loaded", true);
+        Inventory.Read(slot, InventoryId);
+        slot.Itemstack?.Attributes.SetInt("renderVariant", Inventory.Items.Count == 0 ? 1 : 0);
+        Inventory.Clear();
         if (ejectEmpty && empty)
         {
             Item? emptyMag = Api.World.GetItem(new AssetLocation("smokelessfirearms:ak47mag-empty"));
